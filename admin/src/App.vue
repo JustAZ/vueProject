@@ -1,36 +1,37 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <div>
-      <p>
-        If Element is successfully added to this project, you'll see an
-        <code v-text="'<el-button>'"></code>
-        below
-      </p>
-      <el-button>el-button</el-button>
+    <div id="app">
+        <router-view/>
     </div>
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
+<style >
+html,
+body {
+  padding: 0;
+  margin: 0;
 }
-</script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+*::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width: 8px; /*定义纵向滚动条宽度*/
+  height: 8px; /*定义横向滚动条高度*/
 }
+
+*::-webkit-scrollbar-thumb {
+  /*滚动条内部滑块*/
+  border-radius: 8px;
+  background-color: hsla(220, 4%, 58%, 0.3);
+  transition: background-color 0.3s;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  /*鼠标悬停滚动条内部滑块*/
+  background: #bbb;
+}
+
+*::-webkit-scrollbar-track {
+  /*滚动条内部轨道*/
+  background: #ededed;
+}
+
 </style>
