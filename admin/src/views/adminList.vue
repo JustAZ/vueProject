@@ -4,13 +4,7 @@
         <el-table :data="dataList" style="width: 100%">
             <el-table-column prop="_id" label="分类id">
             </el-table-column>
-            
-            <el-table-column prop="name" label="物品名称">
-            </el-table-column>
-            <el-table-column prop="img" label="物品图片">
-                <template slot-scope="scope">
-                   <img :src="scope.row.img" style="width:6rem;height:6rem">
-                </template>
+            <el-table-column prop="username" label="用户名">
             </el-table-column>
             <el-table-column fixed="right" label="操作" width="100">
                 <template slot-scope="scope">
@@ -33,12 +27,12 @@ export default {
   },
   methods: {
     async fetch() {
-      const res = await this.$http.get('rest/item')
+      const res = await this.$http.get('/rest/adminUser')
       // console.log(res.data)
       this.dataList = res.data
     },
     edit(id) {
-      this.$router.push(`/item/create/${id}`)
+      this.$router.push(`/admin/create/${id}`)
     },
     /**
      * 删除
@@ -49,7 +43,7 @@ export default {
         cancelButtonText: '取消',
         type: 'warning'
       }).then(async () => {
-        await this.$http.delete(`rest/item/delete/${row._id}`)
+        await this.$http.delete(`/rest/adminUser/delete/${row._id}`)
         this.$message({
           type: 'success',
           message: '删除成功!'

@@ -3,6 +3,9 @@ import App from './App.vue'
 import './plugins/element.js'
 import router from './router'
 
+import './assets/style.css'
+
+//阻止启动生产消息
 Vue.config.productionTip = false
 
 import http from './http'

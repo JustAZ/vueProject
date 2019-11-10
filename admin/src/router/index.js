@@ -10,6 +10,11 @@ Vue.use(VueRouter)
 
 const routes = [
     {
+        path: '/login',
+        name: 'login',
+        component: () => import('../views/Login')
+    },
+    {
         path: '/',
         name: 'main',
         component: Main,
@@ -38,8 +43,70 @@ const routes = [
             component: () => import('../views/itemEdit')
         }, {
             path: '/item/create/:id',
-            name: 'edit',
+            name: 'edits',
             component: () => import('../views/itemEdit'),
+            props: true//把路由上的参数注入到页面的props中
+        },
+        {
+            path: '/hero/list',
+            name: 'heroList',
+            component: () => import('../views/heroList')
+        },
+        {
+            path: '/hero/create',
+            name: 'heroedit',
+            component: () => import('../views/heroEdit')
+        }, {
+            path: '/hero/create/:id',
+            name: 'heroedits',
+            component: () => import('../views/heroEdit'),
+            props: true//把路由上的参数注入到页面的props中
+        },
+        {
+            path: '/articles/list',
+            name: 'heroList',
+            component: () => import('../views/articleList')
+        },
+        {
+            path: '/articles/create',
+            name: 'articlesedit',
+            component: () => import('../views/articleEdit')
+        }, {
+            path: '/articles/create/:id',
+            name: 'articlesedits',
+            component: () => import('../views/articleEdit'),
+            props: true//把路由上的参数注入到页面的props中
+        },
+
+        {
+            path: '/ads/list',
+            name: 'adsList',
+            component: () => import('../views/adsList')
+        },
+        {
+            path: '/ads/create',
+            name: 'adsedit',
+            component: () => import('../views/adsEdit')
+        }, {
+            path: '/ads/create/:id',
+            name: 'adsedits',
+            component: () => import('../views/adsEdit'),
+            props: true//把路由上的参数注入到页面的props中
+        },
+
+        {
+            path: '/admin/list',
+            name: 'adminList',
+            component: () => import('../views/adminList')
+        },
+        {
+            path: '/admin/create',
+            name: 'adminedit',
+            component: () => import('../views/adminEdit')
+        }, {
+            path: '/admin/create/:id',
+            name: 'adminedits',
+            component: () => import('../views/adminEdit'),
             props: true//把路由上的参数注入到页面的props中
         },
         ]
