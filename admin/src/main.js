@@ -11,7 +11,23 @@ Vue.config.productionTip = false
 import http from './http'
 Vue.prototype.$http = http;
 
+Vue.mixin({
+    //全局混入,便于配置文件上传头部信息
+    computed: {
+        uploadUrl() {
+            return this.$http.defaults.baseURL + '/upload'
+        }
+    },
+    methods: {
+        getAuth() {
+            return {
+                Authorization: `Bearer ${localStorage.token || ''}`
+            }
+        }
+    }
+})
+
 new Vue({
-  router,
-  render: h => h(App)
+    router,
+    render: h => h(App)
 }).$mount('#app')

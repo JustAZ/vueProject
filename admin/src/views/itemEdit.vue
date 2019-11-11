@@ -8,7 +8,7 @@
                 <el-input v-model="model.name"></el-input>
             </el-form-item>
             <el-form-item label="图片上传">
-                <el-upload class="avatar-uploader" :action="$http.defaults.baseURL+'/upload'" :show-file-list="false" :on-success="handleAvatarSuccess">
+                <el-upload class="avatar-uploader" :action="uploadUrl" :headers="getAuth()" :show-file-list="false" :on-success="handleAvatarSuccess">
                     <img v-if="model.img" :src="model.img" class="avatar">
                     <i v-else class="el-icon-plus avatar-uploader-icon"></i>
                 </el-upload>
@@ -61,9 +61,9 @@ export default {
       this.parent = res.data
       console.log(res.data)
     },
-    handleAvatarSuccess(res){
-        this.$set(this.model,'img',res.url)
-        console.log(res)
+    handleAvatarSuccess(res) {
+      this.$set(this.model, 'img', res.url)
+      console.log(res)
     }
   },
   created() {
