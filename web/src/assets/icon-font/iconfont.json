@@ -1,0 +1,100 @@
+{
+  "id": "1100317",
+  "name": "菜单栏",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "33515",
+      "name": "profile",
+      "font_class": "profile",
+      "unicode": "e6b7",
+      "unicode_decimal": 59063
+    },
+    {
+      "icon_id": "36020",
+      "name": "goods",
+      "font_class": "goods",
+      "unicode": "e6cd",
+      "unicode_decimal": 59085
+    },
+    {
+      "icon_id": "194872",
+      "name": "calendar",
+      "font_class": "calendar",
+      "unicode": "e74a",
+      "unicode_decimal": 59210
+    },
+    {
+      "icon_id": "526001",
+      "name": "返回",
+      "font_class": "fanhui",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "637630",
+      "name": "LC_icon_menu_line",
+      "font_class": "LC_icon_menu_line",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    },
+    {
+      "icon_id": "1047529",
+      "name": "article",
+      "font_class": "article",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "1258903",
+      "name": "redpacket_fill",
+      "font_class": "redpacket_fill",
+      "unicode": "e7d3",
+      "unicode_decimal": 59347
+    },
+    {
+      "icon_id": "1512530",
+      "name": "friend_light",
+      "font_class": "friend_light",
+      "unicode": "e7e3",
+      "unicode_decimal": 59363
+    },
+    {
+      "icon_id": "1567578",
+      "name": "more",
+      "font_class": "more",
+      "unicode": "e675",
+      "unicode_decimal": 58997
+    },
+    {
+      "icon_id": "1727377",
+      "name": "32权限、钥匙-线性",
+      "font_class": "quanxianyuechi-xianxing",
+      "unicode": "e8a3",
+      "unicode_decimal": 59555
+    },
+    {
+      "icon_id": "1727459",
+      "name": "224用户",
+      "font_class": "yonghu",
+      "unicode": "e8c8",
+      "unicode_decimal": 59592
+    },
+    {
+      "icon_id": "8924412",
+      "name": "video",
+      "font_class": "video",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "11208508",
+      "name": "23-superhero",
+      "font_class": "-superhero",
+      "unicode": "e69d",
+      "unicode_decimal": 59037
+    }
+  ]
+}
